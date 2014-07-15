@@ -25,6 +25,8 @@ That is why I've created a powershell script that is able to move the emails in 
 Here's how it will look like in the console:
 ![powershell outlook rules](https://raw.githubusercontent.com/mnmnc/img/master/powershell_rules.png)
 
+It is 20 characters per item, 4 items a row, plus pipe characters and some spaces, so the script assumes you have a `94 columns` in the console window.
+
 ### Features
 
 You can move emails virtually by matching one of their properties to specified value. Email object has many properties.
