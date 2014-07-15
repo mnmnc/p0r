@@ -29,7 +29,7 @@ It is 20 characters per item, 4 items a row, plus pipe characters and some space
 
 ### Features
 
-You can move emails virtually by matching one of their properties to specified value. Email object has many properties.
+You can move emails virtually by matching one of their properties to specified value. Email object has many properties:
 
 ``` Actions
 AlternateRecipientAllowed
