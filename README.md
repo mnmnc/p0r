@@ -10,10 +10,10 @@ You might wonder - "Why would anyone resign from using Outlook rules wizard?".
 I'm not sure if you stumbled on the same problem with Outlook rules that troubled me, but here it is:
 You have very limited space for Outlook rules. This is a quote from microsoft [KB page](http://support.microsoft.com/kb/886616):
 
-> The rules size limit for mailboxes in Exchange Server 2007 (and later) has a default size of *64 KB per mailbox*. The total rules size limit is also customizable limit up to 256 KB per mailbox.
+> The rules size limit for mailboxes in **Exchange Server 2007 (and later)** has a default size of **64 KB per mailbox**. The total rules size limit is also customizable limit up to 256 KB per mailbox.
 
 > Mailboxes on Exchange Server 2003
-This behavior occurs if the rules that are in your mailbox exceed a size of 32 kilobytes (KB). The total rules size limit for mailboxes on Exchange Server 2003 is 32 KB. The rules limit for Exchange 2003 cannot be changed.
+This behavior occurs if the rules that are in your mailbox exceed a size of 32 kilobytes (KB). The total rules size limit for mailboxes on Exchange Server 2003 is **32 KB**. The rules limit for Exchange 2003 cannot be changed.
 
 
 32 or 64 KB - that is definitely not enough for me. 256 KB is better but still, I had a requirement for more than hundred of rules and Exchange server was limiting me.
@@ -25,7 +25,7 @@ That is why I've created a powershell script that is able to move the emails in 
 Here's how it will look like in the console:
 ![powershell outlook rules](https://raw.githubusercontent.com/mnmnc/img/master/powershell_rules.png)
 
-It is 20 characters per item, 4 items a row, plus pipe characters and some spaces, so the script assumes you have a `94 columns` in the console window.
+It is 20 characters per item, 4 items a row, plus pipe characters and some spaces, so the script assumes you have a **94 columns** in the console window.
 
 ### Features
 
@@ -145,6 +145,6 @@ display ([string]$Email.Subject ) ([string]"Red")
 
 ### 'It is time consuming, you execute the scipt manually and I don't like it'
 
-Well, yes. You have to execute it manually but of course you do not have to start the powershell console, navigate to the script location and invoke the sctipt by `./rules.ps1`. That would be tedious and unproductive. Simply create a powershell shortcut that will execute the script for you (`C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe "C:\rules.ps1"`), pin it to the start menu, and associate the shortcut-key combination with it. I am invoking mine by pressing `CTRL`+`ALT`+`r`. You can also add an alias to the script within your powershell profile config file. I have an alias `rules` that will execute the `rules.ps1` script for me. At the end this is how my shortcut looks like:
+Well, yes. You have to execute it manually but of course you **DO NOT** have to start the powershell console, navigate to the script location and invoke the sctipt by `./rules.ps1` every time. That would be tedious and unproductive. Simply create a powershell shortcut that will execute the script for you (`C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe "C:\rules.ps1"`), pin it to the start menu, and associate the shortcut-key combination with it. I am invoking mine by pressing `CTRL`+`ALT`+`r`. You can also add an alias to the script within your powershell profile config file. I have an alias `rules` that will execute the `rules.ps1` script for me. At the end this is how my shortcut looks like:
 
 ![powershell rules shortcut](https://raw.githubusercontent.com/mnmnc/img/master/powershell_shortcut.jpg)
