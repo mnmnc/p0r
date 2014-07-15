@@ -5,10 +5,10 @@ Powershell replacement for Outlook rules
 
 ### Why?
 
-You might wonder - "Why would anyone resign from using Outlook rules creator?". 
+You might wonder - "Why would anyone resign from using Outlook rules wizard?". 
 
-Been there, done that. I'm not sure if you stumbled on the same problem with Outlook rules that troubled me but here it is:
-You have very limited space for Outlook rules. Here is a quote from microsoft [KB page](http://support.microsoft.com/kb/886616):
+I'm not sure if you stumbled on the same problem with Outlook rules that troubled me, but here it is:
+You have very limited space for Outlook rules. As quote from microsoft [KB page](http://support.microsoft.com/kb/886616) says:
 
 > The rules size limit for mailboxes in Exchange Server 2007 (and later) has a default size of *64 KB per mailbox*. The total rules size limit is also customizable limit up to 256 KB per mailbox.
 
