@@ -29,7 +29,7 @@ It is 20 characters per item, 4 items a row, plus pipe characters and some space
 
 ### Features
 
-You can move emails virtually by matching one of their properties to specified value. Email object has many properties:
+You can move emails by matching one of their properties to specified value. Email object has many properties:
 
 ``` Actions
 AlternateRecipientAllowed
@@ -127,4 +127,17 @@ VotingResponse
 
 I've used properties like `To`, `Subject` and `SenderEmailAddress` but you can customize it however you like.
 
+For example let use `Subject` field and move emails that will have subject matching to string `Alert` to Deleted items folder. It can be done by adding following condition to main `for` loop within the scipt:
+
+```
+    IF ($Email.Subject -match "Alert" ) {
+        $Email.Move($DeletedItems) | out-null
+        continue
+    }
+```
+If you would want to see the email subject in the console after the move, you can add an additional function call before `continue` :
+
+```
+display ([string]$Email.Subject ) ([string]"Red")
+```
 
