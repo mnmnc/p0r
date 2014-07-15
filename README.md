@@ -18,6 +18,8 @@ This behavior occurs if the rules that are in your mailbox exceed a size of 32 k
 
 32, 64 kb - that is definitely not enough for me. 256 kb is better but still, I had a requirement for more than hundred of rules and Exchange server was limiting me.
 
+### How?
+
 That is why I've created a powershell script that is able to move the emails in the Inbox to other folders, subfolders and even PST file. On top of that is shows me a specific color depending on to where the email is being moved.
 
 ### Features
