@@ -16,7 +16,7 @@ You have very limited space for Outlook rules. This is a quote from microsoft [K
 This behavior occurs if the rules that are in your mailbox exceed a size of 32 kilobytes (KB). The total rules size limit for mailboxes on Exchange Server 2003 is 32 KB. The rules limit for Exchange 2003 cannot be changed.
 
 
-32, 64 kb - that is definitely not enough for me. 256 kb is better but still, I had a requirement for more than hundred of rules and Exchange server was limiting me.
+32 or 64 KB - that is definitely not enough for me. 256 KB is better but still, I had a requirement for more than hundred of rules and Exchange server was limiting me.
 
 ### How?
 
