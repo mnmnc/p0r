@@ -22,6 +22,9 @@ This behavior occurs if the rules that are in your mailbox exceed a size of 32 k
 
 That is why I've created a powershell script that is able to move the emails in the Inbox to other folders, subfolders and even PST file. On top of that is shows me a specific color depending on to where the email is being moved.
 
+Here's how it will look like in the console:
+![powershell outlook rules](https://raw.githubusercontent.com/mnmnc/img/master/powershell_rules.png)
+
 ### Features
 
 You can move emails virtually by matching one of their properties to specified value. Email object has many properties.
