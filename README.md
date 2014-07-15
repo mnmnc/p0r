@@ -118,3 +118,6 @@ VotingOptions
 VotingResponse
 ```
 
+I've used properties like `To`, `Subject`, `SenderEmailAddress` but you can customize it however you like.
+
+
