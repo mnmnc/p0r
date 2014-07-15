@@ -127,7 +127,7 @@ VotingResponse
 
 I've used properties like `To`, `Subject` and `SenderEmailAddress` but you can customize it however you like.
 
-### Extending the capabilities acordingly to your needs 
+### Customize it to suite your needs
 
 For example let use `Subject` field and move emails that will have subject matching to string `Alert` to Deleted items folder. It can be done by adding following condition to main `for` loop within the scipt:
 
