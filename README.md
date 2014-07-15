@@ -143,3 +143,8 @@ If you would want to see the email subject in the console after the move, you ca
 display ([string]$Email.Subject ) ([string]"Red")
 ```
 
+### 'It is time consuming, you execute the scipt manually and I don't like it'
+
+Well, yes. You have to execute it manually but of course you do not have to start the powershell console, navigate to the script location and invoke the sctipt by `./rules.ps1`. That would be tedious and unproductive. Simply create a powershell shortcut that will execute the script for you (`C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe "C:\rules.ps1"`), pin it to the start menu, and associate the shortcut-key combination with it. I am invoking mine by pressing `CTRL`+`ALT`+`r`. You can also add an alias to the script within your powershell profile config file. I have an alias `rules` that will execute the `rules.ps1` script for me. At the end this is how my shortcut looks like:
+
+![powershell rules shortcut](https://raw.githubusercontent.com/mnmnc/img/master/powershell_shortcut.jpg)
