@@ -131,7 +131,7 @@ I've used properties like `To`, `Subject` and `SenderEmailAddress` but you can c
 
 For example let use `Subject` field and move emails that will have subject matching to string `Alert` to Deleted items folder. It can be done by adding following condition to main `for` loop within the scipt:
 
-```
+```powershell
     IF ($Email.Subject -match "Alert" ) {
         $Email.Move($DeletedItems) | out-null
         continue
@@ -139,7 +139,7 @@ For example let use `Subject` field and move emails that will have subject match
 ```
 If you would want to see the email subject in the console after the move, you can add an additional function call before `continue` :
 
-```
+```powershell
 display ([string]$Email.Subject ) ([string]"Red")
 ```
 
